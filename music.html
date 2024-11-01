@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOD MUSIC PLAYER</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        main {
+            text-align: center;
+        }
+        select, button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .audio-controls {
+            margin-top: 20px; /* Space between the button and audio controls */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Select Your Mood</h2>
+        <select id="moodSelect">
+            <option value="">--Select Mood--</option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="energetic">Energetic</option>
+            <option value="calm">Calm</option>
+            <option value="hopeless">Hopeless</option>
+            <option value="motivated">Motivated</option>
+            <option value="anxious">Anxious</option> 
+        </select>
+        <button onclick="playSong()">Play Song</button>
+
+        <div class="audio-controls">
+            <audio id="audioPlayer" controls loop>
+                <source id="audioSource" src="" type="audio/mpeg">
+            </audio>
+        </div>
+    </main>
+
+    <script>
+        function playSong() {
+            const mood = document.getElementById('moodSelect').value;
+            const audioPlayer = document.getElementById('audioPlayer');
+            const audioSource = document.getElementById('audioSource');
+
+            switch (mood) {
+                case 'happy':
+                    // Array of happy songs
+                    const happySongs = [
+                        'The Weeknd - Blinding Lights (Official Video).mp3', // Replace with the correct path
+                        'Aaradhike Video Song  Soubin Shahir  E4 Entertainment  Johnpaul George.mp3' // Replace with another happy song path
+                    ];
+                    // Select a random happy song
+                    const randomHappySong = happySongs[Math.floor(Math.random() * happySongs.length)];
+                    audioSource.src = randomHappySong;
+                    break;
+                case 'sad':
+                    audioSource.src = 'sad-song.mp3'; // Replace with your sad song file
+                    break;
+                case 'energetic':
+                    audioSource.src = 'energetic-song.mp3'; // Replace with your energetic song file
+                    break;
+                case 'calm':
+                    audioSource.src = 'calm-song.mp3'; // Replace with your calm song file
+                    break;
+                case 'hopeless':
+                    audioSource.src = 'hopeless-song.mp3'; // Replace with your hopeless song file
+                    break;
+                case 'motivated':
+                    audioSource.src = 'motivated-song.mp3'; // Replace with your motivated song file
+                    break;
+                case 'anxious':
+                    audioSource.src = 'anxious-song.mp3'; // Replace with your anxious song file
+                    break;
+                default:
+                    alert('Please select a mood!');
+                    return; // Exit the function if no mood is selected
+            }
+
+            audioPlayer.load(); // Load the new audio source
+            audioPlayer.play(); // Play the selected song
+        }
+    </script>
+</body>
+</html>
