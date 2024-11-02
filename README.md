@@ -55,8 +55,8 @@ Embedded spotify playlist for the selected mood.
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+[https://drive.google.com/file/d/1ORmTm-XHBdZt4LYewy1Q6ry4LZwQDuT8/view?usp=drive_web]
+The video takes you through the website.
 
 # Additional Demos
 [Add any extra demo materials/links]
