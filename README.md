@@ -33,7 +33,7 @@ For Software:
 NIL
 
 # Run
-Visit the website : 
+Visit the website : https://sree-nandhini.github.io/MoodMusicPlayer/
 
 ### Project Documentation
 For Software:
