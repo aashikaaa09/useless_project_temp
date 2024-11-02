@@ -49,17 +49,12 @@ For Software:
 ![Screenshot (99)](https://github.com/user-attachments/assets/c3b30570-38d2-4e31-8df5-b588ab09bae3)
 Embedded spotify playlist for the selected mood.
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
 
 ### Project Demo
 # Video
 [https://drive.google.com/file/d/1ORmTm-XHBdZt4LYewy1Q6ry4LZwQDuT8/view?usp=drive_web]
 The video takes you through the website.
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
 - Aashika Kiran Nair: Developed the main application layout and mood selection functionality.
