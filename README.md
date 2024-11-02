@@ -1,4 +1,4 @@
-<img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
+![Screenshot 2024-11-02 211419](https://github.com/user-attachments/assets/a3c24312-691e-4a7a-bf73-6b22eebcec74)<img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
 # Mood-Disrupting Music Player
 
@@ -39,14 +39,15 @@ Visit the website : https://sree-nandhini.github.io/MoodMusicPlayer/
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Welcome screen of mood music player](https://github.com/user-attachments/assets/57c8b11d-359c-4438-9dcd-5034c673e98d)
+-The welcome screen which welcomes you to the website and takes you to the main interface
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot 2024-11-02 211419](https://github.com/user-attachments/assets/c68f6e63-cf40-4f24-8682-e9c4ddefbbae)
+-The User Interface consistes of a drop-down menu with various mood options and a play button. You can select your mood from the drop down and click on 'Play Song' button to get the songs and play the music.
+
+![Screenshot (99)](https://github.com/user-attachments/assets/c3b30570-38d2-4e31-8df5-b588ab09bae3)
+Embedded spotify playlist for the selected mood.
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
