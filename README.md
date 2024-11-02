@@ -10,7 +10,7 @@
 ### Team Members
 - Team Lead: Aashika Kiran Nair - LBSITW, Trivandrum
 - Member 2: Anjana Satheesh - LBSITW, Trivandrum
-- Member 3: Sreenandhini - LBSITW, Trivandrum
+- Member 3: G. Sreenandhini - LBSITW, Trivandrum
 
 ### Project Description
 This is a Mood Music Player, a chill space wherein you get to listen to songs NOT based on your mood ;) Just select how you're feeling  from the mood list, and it’ll pull up a "specially curated" Spotify playlist NOT for that exact mood.
