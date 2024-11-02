@@ -61,8 +61,8 @@ For Software:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- Aashika Kiran Nair: HTML,CSS
-- Anjana Satheesh: HTML, JavaScript
+- Aashika Kiran Nair: HTML,CSS,JavaScript
+- Anjana Satheesh: HTML,CSS,JavaScript
 - G Sreenandhini: HTML, JavaScript
 
 ---
