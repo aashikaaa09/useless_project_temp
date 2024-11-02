@@ -1,4 +1,4 @@
-![Screenshot 2024-11-02 211419](https://github.com/user-attachments/assets/a3c24312-691e-4a7a-bf73-6b22eebcec74)<img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
+
 
 # Mood-Disrupting Music Player
 
@@ -38,7 +38,7 @@ Visit the website : https://sree-nandhini.github.io/MoodMusicPlayer/
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots
 ![Welcome screen of mood music player](https://github.com/user-attachments/assets/57c8b11d-359c-4438-9dcd-5034c673e98d)
 -The welcome screen which welcomes you to the website and takes you to the main interface
 
