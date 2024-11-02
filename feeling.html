@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOD MUSIC PLAYER</title>  
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/originals/3d/c3/87/3dc387151b115cf7ae0cf344b8e40eff.gif'); /* Set the background image */
+            background-size: cover; /* Cover the whole body */
+            background-position: center; /* Center the background */
+            margin: 0;
+            padding: 20px;
+            color: white; /* Change text color for visibility */
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        main {
+            text-align: center;
+            background-color: transparent; /* Semi-transparent background for readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            font-size: 45px;
+            font-family: 'Luminari', cursive; /* Change the font size here */
+        }
+        select, button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .audio-controls, .spotify-embed {
+            margin-top: 20px; /* Space between elements */
+        }
+        iframe {
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Select Your Mood</h2>
+        <select id="moodSelect">
+            <option value="">--Select Mood--</option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="energetic">Energetic</option>
+            <option value="calm">Calm</option>
+            <option value="motivated">Motivated</option>
+            <option value="heartbroken">Broken Heart</option>
+        </select>
+        <button onclick="playSong()">Play Song</button>
+
+        <!-- Spotify iframes for each mood -->
+        <div class="spotify-embed" id="happyPlaylist" style="display: none;">
+            <iframe src="https://open.spotify.com/embed/playlist/1mvVKxPhVfMzQYaC3Wp8tC?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="spotify-embed" id="sadPlaylist" style="display: none;">
+            <iframe src="https://open.spotify.com/embed/playlist/7glE6XYdrS25kPgpBV88uu?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="spotify-embed" id="energeticPlaylist" style="display: none;">
+            <iframe src="https://open.spotify.com/embed/playlist/3uHQq2FEouV8tMESlZxePM?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="spotify-embed" id="calmPlaylist" style="display: none;">
+            <iframe src="https://open.spotify.com/embed/playlist/0LC0tpAKM35oMlZsDNkEHB?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="spotify-embed" id="motivatedPlaylist" style="display: none;">
+            <iframe src="https://open.spotify.com/embed/playlist/5NwAvyMv94emg03uTDgCTb?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="spotify-embed" id="heartbrokenPlaylist" style="display: none;">
+            <iframe src="https://open.spotify.com/embed/playlist/1LFRxJcNHD1qb0E1kN4Mt8?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+    </main>
+
+    <script>
+        function playSong() {
+            const mood = document.getElementById('moodSelect').value;
+
+            // Hide all playlists initially
+            document.getElementById('happyPlaylist').style.display = 'none';
+            document.getElementById('sadPlaylist').style.display = 'none';
+            document.getElementById('energeticPlaylist').style.display = 'none';
+            document.getElementById('calmPlaylist').style.display = 'none';
+            document.getElementById('motivatedPlaylist').style.display = 'none';
+            document.getElementById('heartbrokenPlaylist').style.display = 'none';
+
+            // Show the corresponding playlist based on selected mood
+            switch (mood) {
+                case 'happy':
+                    document.getElementById('happyPlaylist').style.display = 'block';
+                    break;
+                case 'sad':
+                    document.getElementById('sadPlaylist').style.display = 'block';
+                    break;
+                case 'energetic':
+                    document.getElementById('energeticPlaylist').style.display = 'block';
+                    break;
+                case 'calm':
+                    document.getElementById('calmPlaylist').style.display = 'block';
+                    break;
+                case 'motivated':
+                    document.getElementById('motivatedPlaylist').style.display = 'block';
+                    break;
+                case 'heartbroken':
+                    document.getElementById('heartbrokenPlaylist').style.display = 'block';
+                    break;
+                default:
+                    alert('Please select a mood!');
+            }
+        }
+    </script>
+</body>
+</html>
